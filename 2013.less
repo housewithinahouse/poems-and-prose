@@ -1,0 +1,80 @@
+body{
+	background:#444;
+	margin:0;
+	min-width:960px;
+	background-image:url('images/background/tweed.png');
+	background-attachment:fixed;
+}
+.poem{
+	.header{
+		height:20px;
+	}
+	margin-left:10px;
+	.poem_wrapper{
+		box-shadow: -10px 10px 20px #222;
+		background:#eee;
+	}
+	p{
+		display:block;
+		padding:15px 80px 40px;
+		margin:0;
+		margin-bottom:40px;
+	}
+	img{
+		width:100%;
+		margin-bottom:-5px;
+	}
+}
+
+.testing{
+	background:#eee;
+	padding:0px 40px 80px ;
+	position:fixed;
+	overflow:scroll;
+	height:102%;
+	box-shadow: -10px -10px 20px #222;
+	.title{
+		font-size:2em;
+		text-align:right;
+		line-height:.9em;
+		padding-top:10px;
+	}
+	.credits{
+		border: thin solid black;
+		margin:10px;
+		padding:20px;
+		text-align:center;
+		font-size:.8em;
+	}
+	ol{
+		margin:10px;
+		//font-family:arial;
+		font-size:.9em;
+		padding:0;
+		list-style-position: inside;
+		text-align:center;
+		padding:20px;
+		border: thick double black;
+		li{
+			margin:0;
+			margin-top:5px;
+			margin-bottom:20px;
+			padding-bottom:10px;
+			border-bottom:thin dashed black;
+			&:before {
+        content: "\a";
+        white-space: pre;
+      }
+			&:hover{
+				list-style-type: circle;
+			}
+		}
+		a{
+			text-decoration:none;
+			color:black;
+			&:hover{
+				color:#333;
+			}
+		}
+	}
+}
